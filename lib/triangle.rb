@@ -14,14 +14,14 @@ class Triangle
      (@side_2 + @side_3 <= @side_1)
      raise TriangleError
    else 
-     if (@side_1 == @side_2) && (@side_2 == @side_3)
-       :equilateral
-     elseif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
-       :isosceles
-     else 
-       (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
-       :scalene
-       
-   
+      if (@side_1 == @side_2) && (@side_2 == @side_3)
+        :equilateral
+      elseif (@side_1 == @side_2) || (@side_2 == @side_3) || (@side_1 == @side_3)
+        :isosceles
+      else 
+        (@side_1 != @side_2) && (@side_2 != @side_3) && (@side_1 != @side_3)
+        :scalene
+      end
+   end
  end
 end
